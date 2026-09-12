@@ -9,7 +9,7 @@
   --color-success-map: #C65D39;
 
   --font-display: 'Playfair Display', serif;
-  --font-body: 'Inter', sans-serif;
+  --font-body: 'Playfair Display', serif;
 }
 
 /* SVG line-art draw-on animation */
@@ -33,6 +33,7 @@ body {
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
   font-family: var(--font-body);
+  font-style: italic;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;

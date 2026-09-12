@@ -323,50 +323,7 @@ function App() {
         </div>
       </section>
 
-      {/* Logistics Section */}
-      <section
-        className="logistics container fade-in-section"
-        id="logistics"
-        ref={addToFadeRefs}
-      >
-        <div className="section-header">
-          <h2>Good to Know</h2>
-        </div>
 
-        <div className="logistics-grid">
-          <div className="card logistics-card">
-            <svg className="logistics-icon" viewBox="0 0 24 24">
-              <path d="M5 10L19 10M5 14L19 14" />
-              <rect x="3" y="6" width="18" height="12" rx="2" />
-            </svg>
-            <h3>Parking & Vehicles</h3>
-            <p className="caption">
-              Please check with security for guest parking availability inside
-              the compound.
-            </p>
-          </div>
-
-          <div className="card logistics-card">
-            <svg className="logistics-icon" viewBox="0 0 24 24">
-              <path d="M4 6h16v12H4z" />
-              <circle cx="8" cy="18" r="2" />
-              <circle cx="16" cy="18" r="2" />
-            </svg>
-            <h3>Public Transport</h3>
-            <p className="caption">
-              Easily accessible via local transit near Paragon centre.
-            </p>
-          </div>
-
-          <div className="card logistics-card">
-            <svg className="logistics-icon" viewBox="0 0 24 24">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-            </svg>
-            <h3>Attire</h3>
-            <p className="caption">Traditional festive attire is appreciated.</p>
-          </div>
-        </div>
-      </section>
 
       {/* Sticky Bottom CTA */}
       <div
