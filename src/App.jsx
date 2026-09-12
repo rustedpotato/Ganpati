@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 import './style.css'; // Make sure the path is correct depending on your setup
 
 function App() {
-  const [isStickyVisible, setIsStickyVisible] = useState(false);
   const heroRef = useRef(null);
   const fadeRefs = useRef([]);
 
@@ -29,28 +28,9 @@ function App() {
       if (el) fadeObserver.observe(el);
     });
 
-    // 2. Observer for sticky bar
-    const stickyObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          setIsStickyVisible(!entry.isIntersecting);
-        });
-      },
-      {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0,
-      }
-    );
-
-    if (heroRef.current) {
-      stickyObserver.observe(heroRef.current);
-    }
-
     // Cleanup function
     return () => {
       fadeObserver.disconnect();
-      stickyObserver.disconnect();
     };
   }, []);
 
@@ -338,20 +318,6 @@ function App() {
 
 
 
-      {/* Sticky Bottom CTA */}
-      <div
-        className={`sticky-bar ${isStickyVisible ? 'visible' : ''}`}
-        id="stickyBar"
-      >
-        <a
-          href="https://maps.google.com/?q=Mahalaxmi+CHS,+Gopal+nagar,+Worli,+Mumbai"
-          className="btn-primary"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Get Directions
-        </a>
-      </div>
     </>
   );
 }
