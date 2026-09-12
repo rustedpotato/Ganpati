@@ -254,6 +254,15 @@ function App() {
         </div>
       </section>
 
+      {/* Divider */}
+      <div className="divider container">
+        <div className="divider-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 4 L16 12 L12 20 L8 12 Z" />
+          </svg>
+        </div>
+      </div>
+
       {/* Event Schedule Section */}
       <section
         className="schedule container fade-in-section"
