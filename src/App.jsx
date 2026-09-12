@@ -198,6 +198,62 @@ function App() {
         </div>
       </div>
 
+      {/* Location Section */}
+      <section
+        className="location container fade-in-section"
+        id="location"
+        ref={addToFadeRefs}
+      >
+        <div className="section-header">
+          <h2>Venue & Directions</h2>
+          <p
+            style={{
+              marginTop: '8px',
+              textTransform: 'uppercase',
+              letterSpacing: '0.1em',
+              fontSize: '13px',
+            }}
+          >
+            At Our Residence
+          </p>
+        </div>
+
+        <div className="card map-card">
+          <iframe
+            className="map-embed"
+            title="Ganpati Celebration Location Map"
+            src="https://maps.google.com/maps?q=601,+I-wing,+Mahalaxmi+CHS,+Gopal+nagar,+opp+Paragon+centre,+Worli,+Mumbai+-+400030&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            allowFullScreen
+            referrerPolicy="no-referrer-when-downgrade"
+            style={{ border: 0 }}
+          />
+        </div>
+
+        <a
+          href="https://maps.google.com/?q=Mahalaxmi+CHS,+Gopal+nagar,+Worli,+Mumbai"
+          className="btn-primary btn-full-width"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Get Directions
+        </a>
+
+        <div className="map-info">
+          <p>
+            <strong>601, I- wing, Mahalaxmi CHS</strong>
+            <br />
+            Gopal nagar, opp Paragon centre
+            <br />
+            Worli, Mumbai - 30
+            <br /><br />
+            <strong>Contact:</strong>
+            <br />
+            Chaitanya Gali (+91 7977862412)
+          </p>
+        </div>
+      </section>
+
       {/* Event Schedule Section */}
       <section
         className="schedule container fade-in-section"
@@ -268,58 +324,6 @@ function App() {
               </li>
             </ul>
           </div>
-        </div>
-      </section>
-
-      {/* Location Section */}
-      <section
-        className="location container fade-in-section"
-        id="location"
-        ref={addToFadeRefs}
-      >
-        <div className="section-header">
-          <h2>Venue & Directions</h2>
-          <p
-            style={{
-              marginTop: '8px',
-              textTransform: 'uppercase',
-              letterSpacing: '0.1em',
-              fontSize: '13px',
-            }}
-          >
-            At Our Residence
-          </p>
-        </div>
-
-        <div className="card map-card">
-          <iframe
-            className="map-embed"
-            title="Ganpati Celebration Location Map"
-            src="https://maps.google.com/maps?q=601,+I-wing,+Mahalaxmi+CHS,+Gopal+nagar,+opp+Paragon+centre,+Worli,+Mumbai+-+400030&t=&z=16&ie=UTF8&iwloc=&output=embed"
-            loading="lazy"
-            allowFullScreen
-            referrerPolicy="no-referrer-when-downgrade"
-            style={{ border: 0 }}
-          />
-        </div>
-
-        <a
-          href="https://maps.google.com/?q=Mahalaxmi+CHS,+Gopal+nagar,+Worli,+Mumbai"
-          className="btn-primary btn-full-width"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Get Directions
-        </a>
-
-        <div className="map-info">
-          <p>
-            <strong>601, I- wing, Mahalaxmi CHS</strong>
-            <br />
-            Gopal nagar, opp Paragon centre
-            <br />
-            Worli, Mumbai - 30
-          </p>
         </div>
       </section>
 
